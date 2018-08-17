@@ -1,0 +1,8 @@
+local.env
+*.pyc
+_site/
+potluck/include
+potluck/lib/python3.6
+potluck/bin
+prod.env
+db.sqlite3

@@ -1,0 +1,22 @@
+
+# version: '3'
+# services:
+#   web:
+#     build: .
+#     ports:
+#      - "8090:8090"
+#     env_file: prod.env
+
+version: "2"
+services:
+  django:
+    container_name: potluck
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 3f334944ef82
+    stdin_open: true
+    tty: true
+    ports:
+      - "8090:8090"
+    env_file: prod.env
